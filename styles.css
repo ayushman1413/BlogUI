@@ -12,7 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Header & Navigation */
 header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -96,7 +95,6 @@ nav {
   transform: scale(1.1);
 }
 
-/* Page Sections */
 .page-section {
   display: none;
   min-height: calc(100vh - 80px);
@@ -121,7 +119,6 @@ nav {
   }
 }
 
-/* Hero Section */
 .hero {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -291,7 +288,6 @@ nav {
   transform: translateY(-1px);
 }
 
-/* Blog Posts Grid */
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -414,7 +410,6 @@ nav {
   transform: translateX(3px);
 }
 
-/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
@@ -521,7 +516,6 @@ nav {
   line-height: 1.6;
 }
 
-/* Contact Form */
 .contact-form {
   background: white;
   padding: 2rem;
@@ -572,7 +566,6 @@ nav {
   resize: vertical;
 }
 
-/* Subscribe Section */
 .subscribe-content {
   background: white;
   padding: 3rem;
@@ -617,7 +610,6 @@ nav {
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-/* Loading Spinner */
 .loading {
   display: none;
   text-align: center;
@@ -643,7 +635,6 @@ nav {
   }
 }
 
-/* No Results */
 .no-results {
   text-align: center;
   padding: 3rem;
@@ -656,7 +647,6 @@ nav {
   margin-bottom: 1rem;
 }
 
-/* Success Message */
 .success-message {
   background: linear-gradient(135deg, #10b981, #059669);
   color: white;
@@ -668,7 +658,6 @@ nav {
   font-weight: 500;
 }
 
-/* Article Content Styles */
 .article-content {
   line-height: 1.8;
 }
@@ -724,7 +713,6 @@ nav {
   color: #4a5568;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -833,12 +821,10 @@ nav {
   }
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Focus styles for accessibility */
 button:focus,
 input:focus,
 textarea:focus {
@@ -846,7 +832,6 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-/* Print styles */
 @media print {
   .modal,
   .loading,

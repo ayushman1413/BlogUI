@@ -1,6 +1,5 @@
 "use client"
 
-// Blog posts data with full content
 const blogPosts = [
   {
     id: 1,
@@ -477,11 +476,9 @@ const navLinks = document.getElementById("navLinks")
 const articleModal = document.getElementById("articleModal")
 const articleContent = document.getElementById("articleContent")
 
-// State
 let currentFilter = "all"
 let currentSearch = ""
 
-// Initialize the app
 function init() {
   showLoading()
   setTimeout(() => {
@@ -492,9 +489,7 @@ function init() {
   }, 1000)
 }
 
-// Setup event listeners
 function setupEventListeners() {
-  // Search functionality
   searchInput.addEventListener(
     "input",
     debounce((e) => {
@@ -504,7 +499,6 @@ function setupEventListeners() {
     }, 300),
   )
 
-  // Filter buttons
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       filterBtns.forEach((b) => b.classList.remove("active"))
@@ -515,32 +509,26 @@ function setupEventListeners() {
     })
   })
 
-  // Mobile menu
   mobileMenu.addEventListener("click", () => {
     navLinks.classList.toggle("active")
   })
 
-  // Close mobile menu when clicking outside
   document.addEventListener("click", (e) => {
     if (!e.target.closest("nav")) {
       navLinks.classList.remove("active")
     }
   })
 
-  // Contact form
   document.getElementById("contactForm").addEventListener("submit", handleContactForm)
 
-  // Subscribe form
   document.getElementById("subscribeForm").addEventListener("submit", handleSubscribeForm)
 
-  // Modal close on outside click
   articleModal.addEventListener("click", (e) => {
     if (e.target === articleModal) {
       closeModal()
     }
   })
 
-  // Keyboard shortcuts
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && articleModal.classList.contains("active")) {
       closeModal()
@@ -552,24 +540,18 @@ function setupEventListeners() {
   })
 }
 
-// Show section
 function showSection(sectionId) {
-  // Hide all sections
   document.querySelectorAll(".page-section").forEach((section) => {
     section.classList.remove("active")
   })
 
-  // Show selected section
   document.getElementById(sectionId).classList.add("active")
 
-  // Close mobile menu
   navLinks.classList.remove("active")
 
-  // Scroll to top
   window.scrollTo({ top: 0, behavior: "smooth" })
 }
 
-// Render blog posts
 function renderBlogPosts(posts) {
   if (posts.length === 0) {
     blogGrid.style.display = "none"
@@ -602,7 +584,6 @@ function renderBlogPosts(posts) {
     .join("")
 }
 
-// Open article in modal
 function openArticle(postId) {
   const post = blogPosts.find((p) => p.id === postId)
   if (post) {
@@ -616,13 +597,11 @@ function openArticle(postId) {
   }
 }
 
-// Close modal
 function closeModal() {
   articleModal.classList.remove("active")
   document.body.style.overflow = "auto"
 }
 
-// Filter and search functionality
 function filterAndSearch() {
   let filteredPosts = blogPosts
 
@@ -647,19 +626,16 @@ function filterAndSearch() {
   }, 300)
 }
 
-// Handle contact form
 function handleContactForm(e) {
   e.preventDefault()
   const form = e.target
   const formData = new FormData(form)
 
-  // Show loading state
   const submitBtn = form.querySelector('button[type="submit"]')
   const originalText = submitBtn.textContent
   submitBtn.textContent = "Sending..."
   submitBtn.disabled = true
 
-  // Simulate form submission
   setTimeout(() => {
     document.getElementById("contactSuccess").style.display = "block"
     form.reset()
@@ -672,26 +648,20 @@ function handleContactForm(e) {
   }, 1500)
 }
 
-// Handle subscribe form
 function handleSubscribeForm(e) {
   e.preventDefault()
   const form = e.target
   const email = form.querySelector('input[type="email"]').value
 
-  // Show loading state
   const submitBtn = form.querySelector('button[type="submit"]')
   const originalText = submitBtn.textContent
   submitBtn.textContent = "Subscribing..."
   submitBtn.disabled = true
-
-  // Simulate subscription
   setTimeout(() => {
     document.getElementById("subscribeSuccess").style.display = "block"
     form.reset()
     submitBtn.textContent = originalText
     submitBtn.disabled = false
-
-    // Store subscription in localStorage
     const subscribers = JSON.parse(localStorage.getItem("subscribers") || "[]")
     subscribers.push({ email, date: new Date().toISOString() })
     localStorage.setItem("subscribers", JSON.stringify(subscribers))
@@ -701,8 +671,6 @@ function handleSubscribeForm(e) {
     }, 5000)
   }, 1500)
 }
-
-// Scroll to blogs section
 function scrollToBlogs() {
   const blogGrid = document.querySelector(".blog-grid")
   if (blogGrid) {
@@ -713,7 +681,6 @@ function scrollToBlogs() {
   }
 }
 
-// Utility functions
 function formatDate(dateString) {
   const options = { year: "numeric", month: "long", day: "numeric" }
   return new Date(dateString).toLocaleDateString(undefined, options)
@@ -755,7 +722,6 @@ function loadUserPreferences() {
   }
 }
 
-// Debounce function for search
 function debounce(func, wait) {
   let timeout
   return function executedFunction(...args) {
@@ -768,10 +734,8 @@ function debounce(func, wait) {
   }
 }
 
-// Initialize the app when DOM is loaded
 document.addEventListener("DOMContentLoaded", init)
 
-// Console messages
 console.log("🚀 TechBlog loaded successfully!")
 console.log("✅ All features are working:")
 console.log("  • Navigation between pages")
