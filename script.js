@@ -8,11 +8,11 @@ const blogPosts = [
       "Learn the essential ES6+ features that every modern JavaScript developer should know, including arrow functions, destructuring, and async/await.",
     category: "javascript",
     date: "2024-01-15",
-    author: "Sarah Johnson",
+    author: "Shyam Sundar",
     icon: "⚡",
     content: `
             <h1>Getting Started with Modern JavaScript ES6+</h1>
-            <p><strong>By Sarah Johnson • January 15, 2024</strong></p>
+            <p><strong>By Shyam Sundar • January 15, 2024</strong></p>
             
             <h2>Introduction</h2>
             <p>JavaScript has evolved significantly since ES6 (ECMAScript 2015) was released. These modern features have revolutionized how we write JavaScript code, making it more readable, maintainable, and powerful.</p>
@@ -33,7 +33,7 @@ const add = (a, b) => a + b;</code></pre>
 const [first, second] = [1, 2, 3];
 
 // Object destructuring
-const {name, age} = {name: 'John', age: 30};</code></pre>
+const {name, age} = {name: 'Ram', age: 30};</code></pre>
             
             <h2>Template Literals</h2>
             <p>Template literals make string interpolation much easier:</p>
@@ -63,11 +63,11 @@ const greeting = \`Hello, \${name}!\`;</code></pre>
       "Master CSS Grid to create flexible, responsive layouts that work perfectly across all devices and screen sizes.",
     category: "css",
     date: "2024-01-12",
-    author: "Mike Chen",
+    author: "Rohit Singh",
     icon: "🎨",
     content: `
             <h1>Building Responsive Layouts with CSS Grid</h1>
-            <p><strong>By Mike Chen • January 12, 2024</strong></p>
+            <p><strong>By Rohit Singh  • January 12, 2024</strong></p>
             
             <h2>Why CSS Grid?</h2>
             <p>CSS Grid is a powerful layout system that allows you to create complex, responsive layouts with ease. Unlike Flexbox, which is one-dimensional, Grid is two-dimensional, giving you control over both rows and columns.</p>
@@ -108,11 +108,11 @@ const greeting = \`Hello, \${name}!\`;</code></pre>
       "Dive deep into React Hooks and learn how to use useState, useEffect, and custom hooks to build powerful React applications.",
     category: "react",
     date: "2024-01-10",
-    author: "Emily Davis",
+    author: "Dr. Lodhi",
     icon: "⚛️",
     content: `
             <h1>React Hooks: A Complete Guide</h1>
-            <p><strong>By Emily Davis • January 10, 2024</strong></p>
+            <p><strong>By Dr. Lodhi • January 10, 2024</strong></p>
             
             <h2>Introduction to Hooks</h2>
             <p>React Hooks revolutionized how we write React components by allowing us to use state and other React features in functional components.</p>
@@ -172,11 +172,11 @@ function UserProfile({ userId }) {
       "Discover the latest Node.js best practices, performance optimization techniques, and security considerations for modern applications.",
     category: "nodejs",
     date: "2024-01-08",
-    author: "Alex Rodriguez",
+    author: "Alex ",
     icon: "🚀",
     content: `
             <h1>Node.js Best Practices for 2024</h1>
-            <p><strong>By Alex Rodriguez • January 8, 2024</strong></p>
+            <p><strong>By Alex• January 8, 2024</strong></p>
             
             <h2>Project Structure</h2>
             <p>Organize your Node.js projects for maintainability:</p>
