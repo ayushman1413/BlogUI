@@ -172,11 +172,11 @@ function UserProfile({ userId }) {
       "Discover the latest Node.js best practices, performance optimization techniques, and security considerations for modern applications.",
     category: "nodejs",
     date: "2024-01-08",
-    author: "Alex ",
+    author: "Arjun Kumar",
     icon: "🚀",
     content: `
             <h1>Node.js Best Practices for 2024</h1>
-            <p><strong>By Alex• January 8, 2024</strong></p>
+            <p><strong>By Arjun Kumar• January 8, 2024</strong></p>
             
             <h2>Project Structure</h2>
             <p>Organize your Node.js projects for maintainability:</p>
@@ -227,11 +227,11 @@ app.use(rateLimit({
       "Create smooth, engaging animations and transitions using CSS. Learn keyframes, timing functions, and performance optimization.",
     category: "tutorial",
     date: "2024-01-05",
-    author: "Lisa Wang",
+    author: "Lila Sharma",
     icon: "✨",
     content: `
             <h1>CSS Animations and Transitions Tutorial</h1>
-            <p><strong>By Lisa Wang • January 5, 2024</strong></p>
+            <p><strong>By Lila Sharma • January 5, 2024</strong></p>
             
             <h2>CSS Transitions</h2>
             <p>Add smooth transitions to your elements:</p>
@@ -281,11 +281,11 @@ app.use(rateLimit({
       "Explore advanced JavaScript design patterns including module pattern, observer pattern, and functional programming concepts.",
     category: "javascript",
     date: "2024-01-03",
-    author: "David Kim",
+    author: "Devendra Patel",
     icon: "🧩",
     content: `
             <h1>Advanced JavaScript Patterns</h1>
-            <p><strong>By David Kim • January 3, 2024</strong></p>
+            <p><strong>By Devendra Patel • January 3, 2024</strong></p>
             
             <h2>Module Pattern</h2>
             <p>Encapsulate code and create private variables:</p>
@@ -349,11 +349,11 @@ const compose = (f, g) => (x) => f(g(x));</code></pre>
       "Learn how to optimize React applications for better performance using memoization, code splitting, and lazy loading techniques.",
     category: "react",
     date: "2024-01-01",
-    author: "Jennifer Lee",
+    author: "Jyoti Singh",
     icon: "⚡",
     content: `
             <h1>React Performance Optimization</h1>
-            <p><strong>By Jennifer Lee • January 1, 2024</strong></p>
+            <p><strong>By Jyoti Singh • January 1, 2024</strong></p>
             
             <h2>React.memo</h2>
             <p>Prevent unnecessary re-renders with React.memo:</p>
@@ -414,11 +414,11 @@ function App() {
       "Explore modern CSS layout methods including Flexbox, Grid, and Container Queries for creating adaptive designs.",
     category: "css",
     date: "2023-12-28",
-    author: "Tom Wilson",
+    author: "Tarun Verma",
     icon: "📐",
     content: `
             <h1>Modern CSS Layout Techniques</h1>
-            <p><strong>By Tom Wilson • December 28, 2023</strong></p>
+            <p><strong>By Tarun Verma • December 28, 2023</strong></p>
             
             <h2>Flexbox Fundamentals</h2>
             <p>Master the flexible box layout:</p>
